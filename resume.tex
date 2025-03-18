@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.70in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{url} % Added for better URL handling
+
+% Define colors
+\definecolor{primarycolor}{RGB}{70,70,70}
+
+% Configure hyperref with breaklinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    urlcolor=primarycolor,
+    breaklinks=true % Allow URLs to break across lines
+}
+
+% Configure section formatting
+\titleformat{\section}
+  {\Large\bfseries}
+  {}{0em}
+  {}[\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries}
+  {}{0em}
+  {}
+
+% Reduce spacing between items
+\setlist{nosep}
+
+% Adjust default spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Custom command for company names with URLs to allow line breaks
+\newcommand{\company}[2]{%
+  \href{#2}{\mbox{#1}}%
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{NIVEDITA PRIYADARSHINI}}\\[0.3cm]
+    Bangalore, India\\
+    \href{mailto:nid.mishra7@gmail.com}{nid.mishra7@gmail.com} |
+    GitHub: \href{https://github.com/nid90}{nid90} |
+    LinkedIn: \href{https://linkedin.com/in/nid90}{nid90}
+\end{center}
+
+\section*{PROFESSIONAL SUMMARY}
+Seasoned software engineer and technology entrepreneur with over a decade of experience building scalable systems and leading engineering teams. Co-founded and led technology companies, specializing in high-performance distributed systems, complex workflow orchestration, and resilient job processing. Worked with many tech stacks over the years including Clojure, Go, Ruby (on Rails) and Python.
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\subsection*{Co-Founder \& Technical Lead | \company{Tramline}{https://tramline.app} | Jan 2023--Feb 2025}
+Co-founded and built an open-source release management platform for mobile app teams. Led end-to-end product development, including engineering architecture and system design. Managed technical direction while contributing to sales and marketing initiatives.
+
+\subsection*{Partner \& Senior Software Engineer | \company{nilenso}{https://nilenso.com} | Jun 2013--Oct 2022}
+Founding member of nilenso, an employee-owned software co-operative. It is a boutique technology consultancy based in India and Canada with expertise in building thoughtful, well-crafted products for its clients. Handled everything from talking to lawyers about setting up the company's LLP agreement to hiring, sales, outreach and development. Ran the company as an executive for the last three years. While at nilenso, worked as a software engineer (both junior and then senior) for five clients over the span of nine years.
+
+\subsection*{Software Engineer | C42 Engineering | Jan 2012--May 2013}
+Joined this small boutique Ruby consultancy right out of college. C42 Engineering was a boutique technology consultancy that specialized in delivering high-quality technology solutions to some of the fastest-growing startups both in India and in the Valley.
+
+\section*{KEY PROJECTS}
+
+\subsection*{\href{https://github.com/tramlinehq/tramline}{Tramline}}
+\begin{itemize}
+    \item Part of a very small team of two engineers building a simple, collaborative way for teams to release their mobile applications
+    \item Did everything from customer research, product development, UX design to marketing, sales, writing blog posts, docs and newsletters (basically, everything required to run a startup)
+    \item The main service is written using Ruby on Rails, Sidekiq and PostgreSQL. All the code for Tramline is open-source and available on GitHub to self-host
+\end{itemize}
+
+\subsection*{\href{https://www.gojek.io}{GoJek (GoTo)}}
+\begin{itemize}
+  \item Designed and implemented a high-performance allocation engine handling 1000+ orders/second using Clojure, RabbitMQ and PostgreSQL
+  \item Helped design and build a set of services and workers to handle various incentive schemes and payouts for the drivers
+  \item Managed a service in Golang tracking real-time location of the entire fleet of 100-150k drivers using PostgreSQL as the datastore
+  \item Mentored team members in Clojure and streaming architecture patterns using Kafka
+\end{itemize}
+
+\subsection*{\href{https://exotel.com}{Exotel}}
+\begin{itemize}
+    \item Planned, designed, and built an Identity Access Management (IAM) framework for the multiple API and web services at the company using Auth0 as a base
+    \item Worked closely with multiple stakeholders across various teams and various levels in the organization to handle cross-team requirements and expectations
+\end{itemize}
+
+\subsection*{\href{https://blinkit.com}{Grofers (now Blinkit)}}
+\begin{itemize}
+    \item Worked with a large team of backend, frontend and mobile developers in planning, designing, and building the logistics system to handle last-mile delivery of the hyper-local grocery delivery company
+    \item Developed complex workflow orchestration and management system in Django (Python), Celery and RabbitMQ
+    \item Provided technical leadership and mentorship to the development team
+\end{itemize}
+
+\subsection*{\href{https://www.staples.com/}{Staples Sparx}}
+\begin{itemize}
+    \item Architected high-availability experimentation platform enabling multi-variate testing using Clojure and PostgreSQL
+    \item Focused on maintaining low latency while ensuring system reliability
+    \item As part of the project, built a postgres cluster with automatic failover of the master node using repmgr
+    \item Gave a \href{https://www.youtube.com/watch?v=YjfXhhxw9Bs&ab_channel=nilenso}{talk} about this at Functional Conf 2015, Bangalore
+\end{itemize}
+
+\section*{COMMUNITY INVOLVEMENT}
+\begin{itemize}
+    \item Organized \href{https://inclojure.org}{InClojure}, Asia's first Clojure/ClojureScript conference two years in a row (2019 \& 2020)
+    \item Started \href{https://tramline.app/clojurebridge}{ClojureBridge Bangalore}, teaching Clojure programming to women, ran it for three years
+\end{itemize}
+
+\section*{TECHNOLOGIES}
+Clojure, Ruby, Ruby on Rails, Go, Python, PostgreSQL, MySQL, Kafka, RabbitMQ, Redis, Bash, Javascipt, and many others
+
+\section*{EDUCATION}
+Bachelor of Engineering in Computer Science and Engineering, Visvesvaraya Technological University (VTU), Bangalore
+
+\end{document}
