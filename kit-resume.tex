@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.70in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{url} % Added for better URL handling
+
+% Define colors
+\definecolor{primarycolor}{RGB}{70,70,70}
+
+% Configure hyperref with breaklinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    urlcolor=primarycolor,
+    breaklinks=true % Allow URLs to break across lines
+}
+
+% Configure section formatting
+\titleformat{\section}
+  {\Large\bfseries}
+  {}{0em}
+  {}[\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries}
+  {}{0em}
+  {}
+
+% Reduce spacing between items
+\setlist{nosep}
+
+% Adjust default spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Custom command for company names with URLs to allow line breaks
+\newcommand{\company}[2]{%
+  \href{#2}{\mbox{#1}}%
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{AKSHAY GUPTA}}\\[0.3cm]
+    Bangalore, India\\
+    \href{mailto:mail@kitallis.in}{mail@kitallis.in} |
+    GitHub: \href{https://github.com/kitallis}{kitallis} |
+    LinkedIn: \href{https://linkedin.com/in/kitallis}{kitallis}
+\end{center}
+
+\section*{PROFESSIONAL SUMMARY}
+Product \& systems engineer who likes to build small teams and ship human-focused software. Interested in distributed systems, data pipelines, clojure, functional programming and products.
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\subsection*{Co-Founder \& CTO | \company{Tramline}{https://tramline.app} | Aug 2022--Present}
+Co-founded and built an open-source product in the mobile release-engineering space. Led engineering and product development. Built and shipped the MVP including DevOps, documentation, monolith \& auxiliary services. Wearing many hats: product, gtm, engineering, sales etc.
+
+\subsection*{Founding Member | \company{nilenso}{https://nilenso.com} | Jun 2013--Jul 2022}
+Co-founded an employee-owned software co-operative. Full-stack work from software development to operations, mentoring, and recruitment. Delivered well-crafted software products to a variety of clients.
+
+\subsection*{Software Engineer | C42 Engineering | Nov 2011--May 2013}
+Joined this small boutique Ruby consultancy right out of college. C42 Engineering was a boutique technology consultancy that specialized in delivering high-quality technology solutions to some of the fastest-growing startups both in India and in the Valley.
+
+\subsection*{Contract Developer | Google / GNOME | Apr 2011--Aug 2011}
+Developed a filesystem journaling interface for Zeitgeist in GNOME Shell. Bunch of tiny qol tickets and patches over the years.
+
+\section*{KEY PROJECTS}
+
+\subsection*{\href{https://github.com/tramlinehq/tramline}{Tramline}}
+\begin{itemize}
+    \item Part of a very small team of two engineers building a simple, collaborative way for teams to release their mobile applications
+    \item Did everything from customer research, product development, UX design to marketing, sales, writing blog posts, docs and newsletters (basically, everything required to run a startup)
+    \item The main service is written using Ruby on Rails, Sidekiq and PostgreSQL. All the code for Tramline is open-source and available on GitHub to self-host
+\end{itemize}
+
+\subsection*{\href{https://exotel.com}{Exotel}}
+\textit{Exotel is a leading cloud-based VoIP and SMS provider in India (like Twilio).}
+\begin{itemize}
+    \item Led the SMS team and redesigned the SMS delivery system
+    \item Migrated entire messaging Java codebase to Java 11
+    \item Rewrote all synchronous customer-facing messaging APIs to be eventually-consistent and non-blocking
+\end{itemize}
+
+\subsection*{\href{https://simple.org}{Simple (Resole To Save Lives)}}
+\textit{Lead engineer on a large scale, open-source hypertension management system serving over 1.2 million patients in India, Bangladesh, and Ethiopia.}
+\begin{itemize}
+    \item Collaborated with IHCI and research team
+    \item Shipped features like call masking, regional syncing, and optimized reporting
+    \item Improved traceability and observability
+\end{itemize}
+
+\subsection*{\href{https://www.gojek.io}{GoJek (GoTo)}}
+\textit{GoTo is an on-demand multi-service platform and digital payment technology group based in Jakarta.}
+\begin{itemize}
+  \item Led the Transport (ride-hailing) team
+  \item Built point-of-interest subsystem with auto-POI detection via clustering algorithms
+  \item Helped build a streaming framework in Clojure
+  \item Built a streaming payments service to talk to GoPay
+  \item Mentored multiple engineering teams in Clojure and database infrastructure
+\end{itemize}
+
+\subsection*{\href{https://www.staples.com/}{Staples Sparx}}
+\textit{R\&D arm at Staples, personalizing e-commerce using machine learning and data science.}
+\begin{itemize}
+    \item Architected high-availability experimentation platform enabling multi-variate testing using Clojure and PostgreSQL
+    \item Focused on maintaining low latency while ensuring system reliability
+    \item As part of the project, built an in-house Postgres high-availability system with Zookeeper  using repmgr
+\end{itemize}
+
+\section*{SPEAKING ENGAGEMENTS}
+\begin{itemize}
+    \item Reducing Accretion in Monoliths — ClojureD Berlin 2019
+    \item A Postgres Orchestra — PGConf India 2017
+    \item The Tao of Ruby — RubyConf India 2013
+    \item Reducing Accretion in Monoliths — ClojureD Berlin 2019
+    \item ReactJS Talk — Meta Refresh 2015
+    \item Frequent Speaker — BRUG (Bangalore Ruby Users Group) since 2014
+\end{itemize}
+
+\section*{COMMUNITY INVOLVEMENT}
+\begin{itemize}
+    \item Organized \href{https://inclojure.org}{InClojure}, Asia's first Clojure/ClojureScript conference three years in a row (2018 - 2020)
+    \item Organized \href{https://tramline.app/clojurebridge}{ClojureBridge Bangalore}, teaching Clojure programming to women, ran it for two years (2019 - 2020)
+    \item Volunterred as a teacher at RailsGirls Bangalore (2014)
+\end{itemize}
+
+\section*{TECHNOLOGIES}
+Clojure, Ruby, Ruby on Rails, Go, Python, PostgreSQL, MySQL, Kafka, RabbitMQ, Redis, Bash, Javascipt, and many others
+
+\section*{EDUCATION}
+Bachelor of Computer Applications, Guru Gobind Singh Indraprastha University (2008 - 2011)
+
+\end{document}
